@@ -1,0 +1,261 @@
+\documentclass[a4paper,MMMyyyy,nonstopmode]{simpleresumecv}
+
+\setmainfont[Fira Sans]{Fira Sans}
+
+\renewcommand{\BulletSymbol}{{\normalfont\fontsize{6.5}{7.8}\selectfont\raisebox{0.17em}{\char"2022}}}
+\renewcommand{\SubBulletSymbol}{{\normalfont\fontsize{6}{7.2}\selectfont\raisebox{0.17em}{\char"2022}}}
+\renewcommand{\SubSubBulletSymbol}{{\normalfont\fontsize{6}{7.2}\selectfont\raisebox{0.17em}{\char"2022}}}
+
+\newcommand{\CVAuthor}{Matteo Avellina}
+\newcommand{\CVNote}{In compliace with the GDPR and the Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize you to use and process my personal details contained in this document. CV compiled on {\today}}
+\newcommand{\CVWebpage}{https://mechpig.me}
+\newcommand{\CVGithub}{https://github.com/mech-pig}
+\newcommand{\CVLinkedin}{https://linkedin.com/in/matteo-avellina}
+\newcommand{\CVEmail}{matteo.avellina@gmail.com}
+\newcommand{\CVMobile}{+39\,328\,7685221}
+
+\newcommand{\DoubleBigGap}{\BigGap\BigGap}
+
+
+% PDF settings and properties.
+\hypersetup{
+  pdftitle={\CVTitle},
+  pdfauthor={\CVAuthor},
+  pdfsubject={\CVWebpage},
+  pdfcreator={XeLaTeX},
+  pdfproducer={},
+  pdfkeywords={},
+  unicode=true,
+  bookmarks=true,
+  bookmarksopen=true,
+  pdfstartview=FitH,
+  pdfpagelayout=OneColumn,
+  pdfpagemode=UseOutlines,
+  hidelinks,
+  breaklinks,
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+  \Title{\CVAuthor}
+
+  \begin{SubTitle}
+    \href{https://www.google.com/maps/place/Via+dei+Fiordalisi,+1,+20146+Milano+MI}{Via Dei Fiordalisi, 1 - 20146 Milano, MI, Italy}
+    \Gap
+    \href{mailto:\CVEmail}{\CVEmail}\enspace\BulletSymbol\enspace\href{\CVWebpage}{\CVWebpage}\enspace\BulletSymbol\enspace\CVMobile
+    \Gap
+    \href{\CVLinkedin}{\CVLinkedin}\enspace\BulletSymbol\enspace\href{\CVGithub}{\CVGithub}
+  \end{SubTitle}
+
+  \begin{Body}
+
+    \Section
+    {Whoami}
+    {Whoami}
+    {PDF:Whoami}
+    \begin{Detail}
+      I'm a software developer living in Milan, Italy.
+      \par
+      A large part of my job consists of designing and building web APIs and helping others to do the same. I work mainly in Python and Node.js, but I have an interest in programming languages and software development at large. I always try to write clean, modular and concise code.
+      \par
+      I value pragmatic minimalism, clean architecture, microservices, automation and immutability, and try to pursue them whenever possible.
+    \end{Detail}
+
+    \Section
+    {Work Experience}
+    {Work Experience}
+    {PDF:Work Experience}
+
+      \Entry
+        \href{https://igenius.ai}{\textbf{iGenius}, Milano, MI, Italy}
+        \Gap
+        \textit{Team Leader Backend}
+          \hfill
+          \DatestampYM{2019}{02} -- Present
+        \Gap
+        \begin{Detail}
+          \Gap
+          \BulletItem
+            lead a team of 10+ people, supporting them in their daily duties with mentoring, 1:1s, reviews and retrospectives
+          \BulletItem
+            contribute to the design of the backend architecture, using a service-oriented architecture approach built on top of Docker and Kubernetes
+          \BulletItem
+            contribute to the product development from high-level requirements to code, following the best practices in software development (clean code, clean architecture, DDD, event sourcing) and the principles of the Agile manifesto
+          \BulletItem
+            brought 8 new team members on board, conducted more than 35 technical interviews, screened more than 120 resumes
+        \end{Detail}
+
+        \DoubleBigGap
+
+        \textit{Backend Developer}
+          \hfill
+          \DatestampYM{2017}{03} -- \DatestampYM{2019}{02}
+        \begin{Detail}
+          \Gap
+          \BulletItem
+            designed and implemented backend services and web apis in python (falcon, flask, fastapi) and node.js (express)
+          \BulletItem
+            contributed to the transition from a monolithical architecture to a service oriented one, based on \href{https://www.docker.com/}{Docker} and deployed on \href{https://aws.amazon.com/}{AWS}
+          \BulletItem
+            worked with \href{https://redis.io/}{redis} and \href{https://www.postgresql.org/}{PostgreSQL}, managing schema migrations with \href{https://sqitch.org/}{sqitch}
+        \end{Detail}
+
+      \DoubleBigGap
+
+      \Entry
+        \href{http://mammaitaliafood.com}{\textbf{MammaItalia}, Milano, MI, Italy}
+        \Gap
+        \textit{Backend Developer}
+          \hfill
+          \DatestampYM{2016}{01} -- \DatestampYM{2016}{06}
+        \Gap
+        \begin{Detail}
+          \Gap
+          \BulletItem
+            developed a rest api service that lists grocery stores selling a given product based on user location
+          \BulletItem
+            worked with \href{https://www.djangoproject.com/}{Django} with \href{https://www.django-rest-framework.org/}{Django REST Framework}, backed by \href{https://www.postgresql.org/}{PostgreSQL} with \href{https://postgis.net/}{PostGIS} extension
+        \end{Detail}
+
+    \Section
+    {Education}
+    {Education}
+    {PDF:Education}
+
+      \Entry
+        \href{http://www.polo-como.polimi.it}{\textbf{Politecnico di Milano - Polo Territoriale di Como}, Como, CO, Italy}
+        \Gap
+        \textit{M.Sc., Computer Science and Engineering - Sound and Music Engineering}
+          \hfill
+          \DatestampY{2012} -- \DatestampY{2016}
+        \Gap
+        110/110 \textit{cum laude}
+
+      \DoubleBigGap
+
+      \Entry
+        \href{https://www.polimi.it}{\textbf{Politecnico di Milano}, Milano, MI, Italy}
+        \Gap
+        \textit{B.Sc., Computer Science and Engineering}
+          \hfill
+          \DatestampY{2009} -- \DatestampY{2012}
+        \Gap
+        102/110
+
+      \DoubleBigGap
+
+      \Entry
+        \href{https://www.eliovittorini.edu.it/}{\textbf{Liceo Scientifico Elio Vittorini}, Milano, MI, Italy}
+        \Gap
+        \textit{Diploma di Maturità Scientifica}
+          \hfill
+          \DatestampY{2004} -- \DatestampY{2009}
+        \Gap
+        100/100
+
+    \Section
+    {Publications}
+    {Publications}
+    {PDF:Publications}
+
+    \href{https://doi.org/10.1002/acs.2803}
+    {\underline{Avellina, M.}, Brankovic, A., and Piroddi, L.,
+    ``Distributed randomized model structure selection for NARX models.'',
+    \textit{International Journal of Adaptive Control and Signal Processing},
+    vol.~31
+    (2017)
+    doi:10.1002/acs.2803}
+
+
+    \newpage
+
+    \Section
+    {Skills}
+    {Skills}
+    {PDF:Skills}
+      \Entry
+        \textbf{Programming Languages}
+        \Gap
+        \BulletItem
+          Python
+        \BulletItem
+          Node.js
+        \BulletItem
+          Haskell (Basic)
+
+      \BigGap
+
+      \Entry
+        \textbf{Software Development}
+        \Gap
+        \BulletItem
+          Rest API Design
+        \BulletItem
+          Clean Code
+        \BulletItem
+          Test-Driven Development
+        \BulletItem
+          Clean Architecture
+        \BulletItem
+          Microservices
+        \BulletItem
+          Domain-Driven Design
+        \BulletItem
+          Functional Programming
+
+      \BigGap
+
+      \Entry
+        \textbf{Integration \& Deployment}
+        \Gap
+        \BulletItem
+          GitlabCI, CircleCI
+        \BulletItem
+          Docker
+        \BulletItem
+          Kubernetes (Basic)
+
+      \BigGap
+
+      \Entry
+        \textbf{Databases}
+        \Gap
+        \BulletItem
+          PostgreSQL
+        \BulletItem
+          redis
+        \BulletItem
+          MongoDB (Basic)
+
+
+    \Section
+    {Languages}
+    {Languages}
+    {PDF:Languages}
+
+      \Entry
+        Italian: Native language.
+      \Gap
+      \Entry
+        English: Proficient (speaking, reading, writing).
+      \Gap
+      \Entry
+        German: Basic.
+
+  \end{Body}
+
+  \DoubleBigGap
+  \UseNoteFont
+  \null
+  \textit{\CVNote}
+
+
+\end{document}
